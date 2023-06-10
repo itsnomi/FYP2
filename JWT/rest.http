@@ -1,0 +1,47 @@
+POST http://localhost:3000/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "kxxxx",
+    "email": "fg@.com", 
+    "password": "kxxxclark",
+    "reEnterPassword": "kxxxclark"
+}
+
+###
+
+POST http://localhost:3000/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "clark@test.com", 
+    "password": "passclark"
+}
+###
+
+POST http://5b48-2400-adc1-128-6300-9c68-6ca7-6193-96af.ngrok.io/signin
+Content-Type: application/json
+
+{
+    "email": "clark@test.com", 
+    "password": "passclark"
+}
+
+###
+GET http://localhost:3000/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MzRmN2Q4Yzk2YzhmYmU1MzE4OTRiMjEiLCJpYXQiOjE2NjYxNTM4Njh9.xz6VVe4fPrCK_GCAVAg3r_n0uW82zx2vhdphZwpFKSc
+
+###
+POST http://localhost:5000/saveFile HTTP/1.1
+Content-Type: application/application/json
+{
+    "src":"hellooo"
+}
+
+###
+POST http://localhost:5000/sample HTTP/1.1
+Content-Type: : application/json
+{
+    "name": "noman"
+}
